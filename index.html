@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+   
+var numberOfUsers = parseInt(prompt("How many users do you want to add?"));
+
+
+var tableHTML = "<table border='2'><tr><th>Name</th><th>Age</th><th>Email</th></tr>";
+
+for (var i = 0; i < numberOfUsers; i++) {
+  var name = prompt("Enter the name of User " + (i + 1) + ":");
+  var age = parseInt(prompt("Enter the age of User " + (i + 1) + ":"));
+  var email = prompt("Enter the email of User " + (i + 1) + ":");
+
+  tableHTML += "<tr><td>" + name + "</td><td>" + age + "</td><td>" + email + "</td></tr>";
+}
+
+
+tableHTML += "</table>";
+
+
+document.write(tableHTML);
+  </script>  
+</body>
+</html>
